@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<div id="root"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pakar Diagnosa Penyakit Mata</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistem Pakar Diagnosa Penyakit Mata</h1>
+      <label for="search-input" class="search-label mb-2"
+        >Pilih gejala yang Anda alami:</label
+      >
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Cari gejala..." />
+        <button id="search-button">Cari</button>
+      </div>
+      <div class="symptoms-container" id="symptoms-list"></div>
+      <div class="button-container">
+        <button class="button" id="diagnose-button">Diagnosa</button>
+        <button class="button" id="reset-button">Ulangi</button>
+        <button class="button" id="exit-button">Keluar</button>
+      </div>
+      <div id="result-container" style="display: none">
+        <h4>Hasil Diagnosa:</h4>
+        <p id="diagnosis"></p>
+        <h4>Rekomendasi:</h4>
+        <p id="recommendation"></p>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

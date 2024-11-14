@@ -1,0 +1,147 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  body, p, label, input, button {
+  font-size: 1.3rem;
+}
+    body, p, label, input, button {
+    font-size: 1.3rem;
+  }
+  .landing-page .card {
+    max-width: 24rem;
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d5395;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #0270ca;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    background-color: #0270ca;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #1E90FF;
+}
+
+.symptoms-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.symptom-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.symptom-item input {
+    margin-right: 0.5rem;
+}
+.symptom-item {
+    display: flex;
+    align-items: center; /* Mengubah ke center untuk alignment vertikal */
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+.symptom-item input[type="checkbox"] {
+    margin-right: 0.8rem; /* Memberi jarak antara checkbox dan teks */
+    margin-top: 0; /* Reset margin top */
+    flex-shrink: 0; /* Mencegah checkbox dari mengecil */
+}
+
+.symptom-item label {
+    display: flex;
+    align-items: center; /* Mensejajarkan teks dengan checkbox */
+    line-height: 1.2; /* Mengatur jarak antar baris */
+    padding-right: 1rem;
+}
+
+/* Menambahkan style khusus untuk text yang panjang */
+.symptom-text {
+    display: inline-block;
+    vertical-align: middle; /* Mensejajarkan teks secara vertikal */
+    margin-left: 0; /* Menghilangkan margin kiri jika ada */
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    background-color: #0270ca;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1E90FF;
+}
+
+#result-container {
+    background-color: #68ade5;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#diagnosis, #recommendation {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
